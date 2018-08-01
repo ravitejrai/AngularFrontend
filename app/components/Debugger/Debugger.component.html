@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <header>
+        <h1>Debugger</h1>
+        <p>Debugger allows you to locate and resolve errors generated within CBP</p>
+    </header>
+    <br>
+    <div class="full-height" [routerLink]="['./']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" style="width:103.7%;outline:none;overflow-y:scroll;">
+      <div class="admin-Debugger">
+        <div class="graph-wrap">
+          <div class="graph-header group">
+            <!-- <a href="#" class="button prev"></a> -->
+            <div class="conn" >
+              <!-- <span class="fll"> -->
+              <h1>Error Overview </h1>
+
+            </div>
+            <!-- <a href="#" class="button next"></a> -->
+          </div>
+          <div class="graph-wrapper">
+            <div style="height:320px;padding:10px;">
+              <!-- <ngx-charts-bar-vertical [scheme]="colorScheme" [results]="single" [barPadding]="60" [gradient]="gradient" [xAxis]="showXAxis"
+               [yAxis]="showYAxis" (select)="onSelect($event)">
+              </ngx-charts-bar-vertical> -->
+              <iframe  style="width:100%" height="300" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+        <br>
+           <header>Filter Errors </header>
+            <br>
+            <div class="clear">
+            <div class = "app-table">
+              <br>
+              <div class="panel-body" style="position:relative">
+                <div class="table-responsive">
+                    <style>
+                        table, th , td {
+                           border: 1px solid grey;
+                           padding: 5px;
+                        }
+                     </style>
+                      <div class="one">
+                          <h1>Filter by name </h1>
+                          <select [(ngModel)]="searchText" name="column" placeholder="select">
+                              <option *ngFor="let char of characters | filterUnique : 'CustomerName'" value={{char.CustomerName}}>{{char.CustomerName}}</option>
+                          </select>
+                      </div>
+
+                      <div class = "two">
+                          <h1>Filter by age </h1>
+                      <select [(ngModel)]="searchText" name="column" placeholder="select">
+                          <option *ngFor="let char of characters | filterUnique : 'age'" value={{char.age}}>{{char.age}}</option>
+                      </select>
+                      </div>
+
+                      <div class = "three">
+                          <h1>Filter by species </h1>
+                      <select [(ngModel)]="searchText" name="column" placeholder="select">
+                          <option *ngFor="let char of characters | filterUnique : 'species'" value={{char.species}}>{{char.species}}</option>
+                      </select>
+                      </div>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th *ngFor="let column of columns" bgcolor="blue" >
+                                    <font color="#fff" >{{column}}</font>
+                                </th>
+                                <th bgcolor="blue"><font color="#fff" style="float:right;">Action</font></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let char of characters | Searchfilter: searchText | paginate: { id: 'listing_pagination', itemsPerPage: 5, currentPage: page, totalItems: totalRec } "  >
+                                <td *ngFor="let column of columns" >
+                                  {{char[column]}}
+                                </td>
+                                <td style="float:right">
+                                  <a class="btn btn-new-Window" (click)="click(char)"><i class="glyphicon glyphicon-new-window"></i></a>
+                                  <!-- <a href="" data-toggle="modal" data-target="#myModal" ng-click="editperson(r)"><span class="glyphicon glyphicon-new-window"></span></a> -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <pagination-controls  id="listing_pagination" maxSize="5" directionLinks="true" (pageChange)="page = $event"></pagination-controls>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+          </div><!-- ./wrap -->
+          </div>
+    </div>
+</html>

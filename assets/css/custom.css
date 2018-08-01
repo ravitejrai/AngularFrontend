@@ -1,0 +1,308 @@
+.main-lgform-wrap {
+    height: 100%;
+    background-color: #005A92;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main-rgform-wrap {
+    background-color: #005A92;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.reg-content {
+    background: #005A92 !important;
+  }
+
+/* line 40, ../scss/screen.scss */
+
+.lgform-wrap {
+    width: 350px;
+    margin: 0 auto;
+}
+
+/* line 43, ../scss/screen.scss */
+
+.lgform-wrap.large {
+    width: 420px;
+}
+
+/* line 46, ../scss/screen.scss */
+
+.lgform-wrap.mt50 {
+    margin-top: 50px;
+}
+
+.lgform-wrap.pt50 {
+    padding-top: 50px;
+}
+
+/* line 49, ../scss/screen.scss */
+
+.lgform-wrap.abs-center {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* line 55, ../scss/screen.scss */
+
+.lgform-wrap h1 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+/* line 62, ../scss/screen.scss */
+
+.lgform-wrap form {
+    padding: 24px;
+    background-color: #fff;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* line 67, ../scss/screen.scss */
+
+.lgform-wrap form p {
+    padding-top: 0;
+    font-size: 12px;
+    margin: 0 0 27px 0;
+    color: #000;
+}
+
+/* line 72, ../scss/screen.scss */
+
+.lgform-wrap form h2 {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+}
+
+/* line 79, ../scss/screen.scss */
+
+.lgform-wrap .half_w {
+    width: 175px;
+}
+
+/* line 82, ../scss/screen.scss */
+
+.lgform-wrap .input_wrap {
+    margin-bottom: 20px;
+}
+
+/* line 84, ../scss/screen.scss */
+
+.lgform-wrap .input_wrap label {
+    color: #000;
+    display: block;
+    font-size: 10px;
+    margin: 0 0 7px;
+    font-weight: bold;
+}
+
+/* line 90, ../scss/screen.scss */
+
+.lgform-wrap .input_wrap label span {
+    color: #FD0000;
+}
+
+/* line 94, ../scss/screen.scss */
+
+.lgform-wrap .input_wrap input[type=text], .lgform-wrap .input_wrap input[type=email], .lgform-wrap .input_wrap input[type=password], .lgform-wrap .input_wrap input[type=number] {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    padding-left: 13px;
+    border: 1px solid #E4E4E4;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/* line 106, ../scss/screen.scss */
+
+.lgform-wrap .button-blue {
+    border: 0;
+    width: 100%;
+    color: #fff;
+    height: 35px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: 35px;
+    background-color: #005A92;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/* line 118, ../scss/screen.scss */
+
+.lgform-wrap .links-wrap {
+    margin-top: 28px;
+}
+
+/* line 120, ../scss/screen.scss */
+
+.lgform-wrap .links-wrap a {
+    color: #DA1A32;
+    font-size: 10px;
+}
+
+/* line 125, ../scss/screen.scss */
+
+.lgform-wrap .back-to-sign {
+    color: #005A92;
+    margin-top: 11px;
+    display: block;
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #F8F8F8;
+    border: 1px solid #EDEDED;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/* line 136, ../scss/screen.scss */
+
+.lgform-wrap .back-to-sign img {
+    top: 0px;
+    margin-right: 9px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* line 144, ../scss/screen.scss */
+
+.lgform-wrap .show-tooltip {
+    color: #fff;
+    font-size: 7px;
+    font-weight: bold;
+    width: 11px;
+    height: 11px;
+    line-height: 11px;
+    margin-left: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #005A92;
+    text-align: center;
+    position: relative;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  /* line 167, ../scss/screen.scss */
+  .lgform-wrap .show-tooltip:hover span {
+    font-size: 10px;
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    display: block;
+    padding: 5px;
+    width: 100px;
+    top: -25px;
+    left: -11px;
+  }
+  /* line 178, ../scss/screen.scss */
+  .lgform-wrap .show-tooltip span {
+    display: none;
+  }
+
+/* line 158, ../scss/screen.scss */
+
+.lgform-wrap .select-wrap {
+    height: 30px;
+    width: 100%;
+    position: relative;
+    padding-right: 30px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+    border: 1px solid #E4E4E4;
+}
+
+/* line 166, ../scss/screen.scss */
+
+.lgform-wrap .select-wrap select {
+    width: 100%;
+    height: 30px;
+    border: 0;
+    color: #000;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    padding-left: 8px;
+    background: transparent;
+}
+
+/* line 181, ../scss/screen.scss */
+
+.lgform-wrap .select-wrap:after {
+    right: 0;
+    top: 0;
+    content: " ";
+    width: 30px;
+    height: 28px;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    border-left: 1px solid #E4E4E4;
+    background: #FAFAFA url(../img/select.svg) 50% 50% no-repeat;
+    background-size: 13px auto;
+}
+
+/* line 195, ../scss/screen.scss */
+
+.lgform-wrap .sep {
+    height: 10px;
+}
+
+.lgform-wrap .input_wrap .for-ng-message {
+    color: #EA1A32;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.lgform-wrap .input_wrap input[type=text].has_error,
+.lgform-wrap .input_wrap input[type=email].has_error,
+.lgform-wrap .input_wrap input[type=password].has_error,
+.lgform-wrap .input_wrap input[type=number].has_error {
+    border: 1px solid #EA1A32;
+}
+
+.ptrs a {
+    color: #365899;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.scm {
+    font-size: 10px;
+    color: #dc8100;
+    text-decoration: none;
+}
